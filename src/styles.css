@@ -1,0 +1,10 @@
+h1 {
+    color: rgb(220, 255, 105);
+    font-family: cursive;
+  }
+  body {
+    height: 100vh;
+    color: #1f1f1f;
+    background: linear-gradient(to bottom, #99a0d2, #f1ffc0);
+  } 
+  
