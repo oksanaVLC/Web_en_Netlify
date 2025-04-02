@@ -424,17 +424,17 @@ main {
   
   .enlaces {
     display: flex;
-    flex-wrap: nowrap; /* Evita que los enlaces se ajusten a una nueva línea */
-    overflow-x: auto; /* Habilita el desplazamiento horizontal */
-    gap: 10px; /* Espacio entre los enlaces */
-    white-space: nowrap; /* Asegura que el texto no se rompa en varias líneas */
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    gap: 10px; 
+    white-space: nowrap;
     
-    scrollbar-width: thin; /* Estilo de scrollbar en navegadores compatibles */
+    scrollbar-width: thin; 
     
   }
   
   .enlaces::-webkit-scrollbar {
-    height: 6px; /* Altura del scrollbar */
+    height: 6px; 
   }
   
   .enlaces::-webkit-scrollbar-thumb {
@@ -487,6 +487,7 @@ main {
     
   }
   
+
   .dropdown-content2 a {
     float: none;
     color: black;
@@ -494,7 +495,6 @@ main {
     text-decoration: none;
     display: block;
     text-align: left;
-   
    
    }
   
@@ -671,10 +671,7 @@ Página de inicio
     text-align: center;
     padding: 10px;
     margin-bottom: 30px;
-    
-    
 }
-
 
 .hero-image h1 {
   color: var(--negro);
@@ -683,12 +680,15 @@ Página de inicio
   margin-top: 1rem;
   margin-right: 200px;
   font-family: "Playfair Display", serif;
- 
   font-weight:400;
   max-width: 400px;
 }
 
-
+@media (max-width: 768px){
+  .hero-image h1 {
+  font-size: 3.6rem;
+  }
+}
 
 .copyright{
   font-size: 1.5rem;
