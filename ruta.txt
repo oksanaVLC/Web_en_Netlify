@@ -1,1 +1,8 @@
 cd C:/Users/Oksana/My_First_Parcel_App
+
+git remote add origin https://github.com/oksanaVLC/Web_en_Netlify.git
+
+
+
+
+

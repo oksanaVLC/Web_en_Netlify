@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de recetas Lucky Recipe. Categorías de recetas.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Lucky Recipe
+        <img src="img/vecteezy_lucky-clover-leaf_13713853.png" alt="logo">
+    </a>
+     <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+              <li><a href="categories.html">Categorías</a></li>
+               <li><a href="#">Filtro &bigtriangledown;</a>
+              <ul>
+                  <li><a href="#">Tipo de comida</a></li>
+                  <li><a href="#">Dietas</a></li>
+                  <li><a href="#">Festivos&bigtriangledown;</a>
+                      <ul>
+                          <li><a href="#">Navidad</a></li>
+                          <li><a href="#">Pascua</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Restaurantes</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Contacto</a></li>
+      </ul>
+   </nav>
+
+    <div id="menu"><i class="fa-solid fa-bars" onclick="changeIcon(this)"></i></div>
+</header>
+
+    <main>
+    <div class="box">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <div class="search-box">
+            <input type="text" placeholder="Buscar recetas...">
+            <label for="checkbox" class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </label>
+        </div>
+    </div>
+
+    
+       
+       
+  <div class="enlaces"> 
+        <div class="dropdown2">
+        <a href="categories.html" class="dropbtn2" onclick="myFunction()">Categorías</a>
+        <div id="myDropdown" class="dropdown-content2">
+            <a href="#">Tipo de comida</a>
+            <a href="#">Dietas</a>
+            <a href="#">Países</a>
+        </div>
+  </div>
+          <a href=""> Destacados</a>
+          <a href=""> Más populares</a>
+          <a href="">Últimas </a>
+          <a href=""> Repostería</a>
+          <a href="">Veganos </a>
+          <a href="">Para niños </a>
+
+        </div>
+ 
+          <div class="categories">
+ 
+            <h2>Categorías</h2>
+            <div class="category-grid">
+              <div class="category">
+                <img src="img/vecteezy_south-korean-food_.jpg" alt="Arroces">
+                <p>Arroces</p>
+              </div>
+              <div class="category">
+                <img src="img/vecteezy_fresh-vegetables-cartoon_44766741.png" alt="Recetas veganas">
+                <p>Recetas veganas</p>
+              </div>
+              <div class="category">
+                <img src="img/vecteezy_global-international-food-menu-restaurant-logo-global_11516427.jpg" alt="icono de globo dentro de un bol">
+                <p>Recetas del mundo</p>
+              </div>
+              <div class="category">
+                <img src="img/vecteezy_delicious-creamy-mushroom-soup-served-in-a-rustic-bowl_53812793.png" alt="sopa">
+                <p>Sopas</p>
+              </div>
+              <div class="category">
+                <img src="img/vecteezy_a-fresh-mediterranean-salad-bowl-with-vegetables-olives_49007155.jpg" alt="Verduras">
+                <p>Verduras</p>
+              </div>
+              <div class="category">
+                <img src="img/vecteezy_tiramisu-dessert-and-coffee-cup-on-light-background_21174408.jpg" alt="tiramisu">
+                <p>Repostería</p>
+              </div>
+              <div class="category">
+                <img src="img/vecteezy_a-fresh-mediterranean-salad-bowl-with-vegetables-olives_49007155.jpg" alt="Verduras">
+                <p>Verduras</p>
+              </div>
+              <div class="category">
+                <img src="img/vecteezy_tiramisu-dessert-and-coffee-cup-on-light-background_21174408.jpg" alt="tiramisu">
+                <p>Repostería</p>
+              </div>
+              <div class="category">
+                <img src="img/vecteezy_tiramisu-dessert-and-coffee-cup-on-light-background_21174408.jpg" alt="tiramisu">
+                <p>Repostería</p>
+              </div>
+              <div class="category">
+                <img src="img/vecteezy_tiramisu-dessert-and-coffee-cup-on-light-background_21174408.jpg" alt="tiramisu">
+                <p>Repostería</p>
+              </div>
+              <div class="category">
+                <img src="img/vecteezy_tiramisu-dessert-and-coffee-cup-on-light-background_21174408.jpg" alt="tiramisu">
+                <p>Repostería</p>
+              </div>
+              <div class="category">
+                <img src="img/vecteezy_tiramisu-dessert-and-coffee-cup-on-light-background_21174408.jpg" alt="tiramisu">
+                <p>Repostería</p>
+              </div>
+             </div>
+          </div> 
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="flex-footer">
+                <div>
+                    
+                    <p>2025-2026. Oksana Golubeva.</p>
+                </div>
+      
+                <div class="footer-right">
+                    <ul class="social">
+                        <li><a href="" aria-label="Ir a Instagram"><img src="img/instagram.png" alt="Logo d'Instagram"></a></li>
+                        <li><a href="" aria-label="Ir a Youtube"><img src="img/youtube.png" alt="Logo de Youtube"></a></li>
+                    </ul>
+                    <ul class="legal">
+                        <li><a href="">Política de privacidad</a></li>
+                        <li><a href="">Política de <i lang="en">cookies</i></a></li>
+                        <li><a href="">Aviso legal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       </footer>
+
+
+
+
+    <script src="app.js" type="module"></script>
+    <script>
+        let navbar = document.querySelector('.header .navbar');
+        let menu = document.querySelector('#menu');
+
+        menu.onclick = () => {
+            navbar.classList.toggle('active');
+            
+        }
+
+        let changeIcon = function(icon){
+            icon.classList.toggle('fa-times');
+        }
+    </script>
+    
+    </body>
+    </html>
+

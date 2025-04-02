@@ -1,0 +1,18 @@
+[
+    {
+      "title": "Spaghetti Carbonara",
+      "ingredients": "spaghetti, eggs, cheese, pancetta",
+      "description": "Classic Italian pasta dish with eggs, cheese, pancetta, and pepper."
+    },
+    {
+      "title": "Margherita Pizza",
+      "ingredients": "flour, tomatoes, mozzarella, basil",
+      "description": "Simple pizza with tomato, mozzarella cheese, and fresh basil."
+    },
+    {
+      "title": "Chicken Curry",
+      "ingredients": "chicken, curry powder, rice, vegetables",
+      "description": "Delicious curry with chicken, vegetables, and fragrant spices."
+    }
+  ]
+  

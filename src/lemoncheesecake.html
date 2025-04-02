@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de recetas Lucky Recipe. La receta del Lemon Cheesecake.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Lucky Recipe
+        <img src="img/vecteezy_lucky-clover-leaf_13713853.png" alt="logo">
+    </a>
+     <nav class="navbar">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="categories.html">Categorías</a></li>
+         <li><a href="#">Filtro &bigtriangledown;</a>
+              <ul>
+                  <li><a href="#">Tipo de comida</a></li>
+                  <li><a href="#">Dietas</a></li>
+                  <li><a href="#">Festivos&bigtriangledown;</a>
+                      <ul>
+                          <li><a href="#">Navidad</a></li>
+                          <li><a href="#">Pascua</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Restaurantes</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Contacto</a></li>
+      </ul>
+   </nav>
+
+    <div id="menu"><i class="fa-solid fa-bars" onclick="changeIcon(this)"></i></div>
+</header>
+
+    <main>
+    <div class="box">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <div class="search-box">
+            <input type="text" placeholder="Buscar recetas...">
+            <label for="checkbox" class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </label>
+        </div>
+    </div>
+
+    <div class="enlaces"> 
+      <div class="dropdown2">
+        <a href="categories.html" class="dropbtn2" onclick="myFunction()">Categorías</a>
+        <div id="myDropdown" class="dropdown-content2">
+            <a href="#">Tipo de comida</a>
+            <a href="#">Dietas</a>
+            <a href="#">Países</a>
+        </div>
+      </div>
+          <a href=""> Destacados</a>
+          <a href=""> Más populares</a>
+          <a href="">Últimas </a>
+          <a href=""> Repostería</a>
+          <a href="">Veganos </a>
+          <a href="">Para niños </a>
+          <a href=""> </a>
+    </div>
+         
+    
+    <div class="fotoreceta">  
+         <h1 lang="en">Lemon Cheesecake</h1> 
+     <!-- Corazón que cambiará de color al hacer clic -->
+     <i id="heart" class="heart far fa-heart unliked" onclick="toggleHeart()"></i>
+    </div>
+
+    <div class="container">
+      <div class="time">
+       <div class="time-item">
+        <i class="fa fa-utensils"></i>  <!-- Example icon -->
+        <span>8 porciones</span>
+       </div>
+      <div class="time-item">
+        <i class="fa fa-clock"></i>  <!-- Example icon -->
+        <span>1 hora</span>
+      </div>
+    </div>
+    
+    <div class="ingredients">
+        <h2>Ingredientes:</h2>
+            <p>1 1/2 tazas de galletas tipo Graham trituradas</p>
+            <p>1/4 de taza de azúcar</p>
+            <p>1/2 taza de mantequilla sin sal, derretida</p>
+            <p>3 paquetes (225 g cada uno) de queso crema a temperatura ambiente</p>
+            <p>1 taza de azúcar</p>
+            <p>3 huevos grandes</p>
+            <p>1/2 taza de crema agria</p>
+            <p>1/2 taza de zumo de limón recién exprimido</p>
+            <p>1 cucharada de ralladura de limón</p>
+            <p>1 cucharadita de esencia de vainilla</p>
+    </div>
+        
+      <div class="steps">
+        <h2>Instrucciones:</h2>
+        <p>Precalienta el horno a 160°C.</p>
+        <p>Prepara la base mezclando las galletas trituradas, el azúcar y la mantequilla derretida.</p>
+        <p>Para el relleno, bate el queso crema, el azúcar, los huevos, la crema agria, el zumo de limón, la ralladura de limón y la esencia de vainilla hasta obtener una mezcla homogénea.</p>
+        <p>Vierte el relleno sobre la base y hornea durante 45-50 minutos, o hasta que los bordes estén firmes y el centro aún tiemble ligeramente.</p>
+        <p>Apaga el horno y deja que el cheesecake se enfríe dentro con la puerta entreabierta durante aproximadamente 1 hora.</p>
+        <p>Saca el cheesecake del horno, deja que se enfríe a temperatura ambiente y refrigéralo por al menos 4 horas o toda la noche antes de servir.</p>
+    <br>
+        <h3 class="mensaje">¡Disfruta tu cheesecake de limón casero! Es cremoso, refrescante y perfecto para cualquier ocasión.</h3>
+         </div>
+    </div>
+  <section class="tags-section">
+    <h2>Etiquetas</h2>
+    <div class="tags-container">
+      <span class="tag">Saludable</span>
+      <span class="tag">Sin gluten</span>
+      <span class="tag">Veganos</span>
+      <span class="tag">Sopas</span>
+      <span class="tag">Postre</span>
+      <span class="tag">Verduras</span>
+      <span class="tag">Pizza</span>
+      <span class="tag">Pasta</span>
+      <span class="tag">Rápidos</span>
+      <span class="tag">Económicos</span>
+      <span class="tag">Festivos</span>
+      <span class="tag">Ensaladas</span>
+    </div>
+  </section>
+</main>
+<footer>
+    <div class="container-fluid">
+        <div class="flex-footer">
+             <div><p>2025-2026. Oksana Golubeva.</p></div>
+                <div class="footer-right">
+                      <ul class="social">
+                          <li><a href="" aria-label="Ir a Instagram"><img src="img/instagram.png" alt="Logo d'Instagram"></a></li>
+                          <li><a href="" aria-label="Ir a Youtube"><img src="img/youtube.png" alt="Logo de Youtube"></a></li>
+                      </ul>
+                      <ul class="legal">
+                          <li><a href="">Política de privacidad</a></li>
+                          <li><a href="">Política de <i lang="en">cookies</i></a></li>
+                          <li><a href="">Aviso legal</a></li>
+                      </ul>
+                </div>
+          </div>
+        </div>
+</footer>
+  
+    <script>
+            // Función para alternar entre "Me gusta" y "No me gusta"
+            function toggleHeart() {
+                const heart = document.getElementById('heart');
+                if (heart.classList.contains('unliked')) {
+                    heart.classList.remove('unliked');
+                    heart.classList.add('liked');
+                } else {
+                    heart.classList.remove('liked');
+                    heart.classList.add('unliked');
+                }
+            }
+</script>
+  
+<script src="app.js" type="module"></script>
+<script>
+          let navbar = document.querySelector('.header .navbar');
+          let menu = document.querySelector('#menu');
+  
+          menu.onclick = () => {
+              navbar.classList.toggle('active');
+              
+          }
+  
+          let changeIcon = function(icon){
+              icon.classList.toggle('fa-times');
+          }
+</script>
+ 
+<script src="app.js" type="module"></script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

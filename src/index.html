@@ -1,14 +1,257 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>My First Parcel App</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="app.js"></script>
-  </head>
-  <body>
-    <include src="header.html"></include>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de recetas Lucky Recipe. Recetas del mundo y para cada día.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Lucky Recipe
+            <img src="img/vecteezy_lucky-clover-leaf_13713853.png" alt="logo">
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="categories.html">Categorías</a></li>
+                <li><a href="#">Filtro &bigtriangledown;</a>
+                    <ul>
+                        <li><a href="#">Tipo de comida</a></li>
+                        <li><a href="#">Dietas</a></li>
+                        <li><a href="#">Festivos&bigtriangledown;</a>
+                            <ul>
+                                <li><a href="#">Navidad</a></li>
+                                <li><a href="#">Pascua</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Restaurantes</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
 
-    <h1>Hello, World!</h1>
-  </body>
+        <div id="menu"><i class="fa-solid fa-bars" onclick="changeIcon(this)"></i></div>
+    </header>
+    
+    <main>
+        <div class="box">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar recetas...">
+                <label for="checkbox" class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </div>
+        </div>
+        
+        <div class="enlaces"> 
+            <div class="dropdown2">
+              <a href="categories.html" class="dropbtn2" onclick="myFunction()" aria-label="Abrir menú de categorías">Categorías</a>
+              <div id="myDropdown" class="dropdown-content2">
+                    <a href="">Tipo de comida</a>
+                    <a href="">Dietas</a>
+                    <a href="#paises">Paises</a>
+                </div>
+            </div>
+            <a href=""> Destacados</a>
+            <a href=""> Más populares</a>
+            <a href="">Últimas </a>
+            <a href=""> Repostería</a>
+            <a href="">Veganos </a>
+            <a href="">Para niños </a>
+        </div>
+
+        <div class="container">
+            <div class="hero-image">
+                <div class="container">
+                    <h1 lang="en">
+                        Choose your lucky recipe today!
+                        <br>
+                        <a href="lemoncheesecake.html" class="arrow-button" aria-label="Pinchar el botón de la búsqueda de una receta aleatoria como un desafío para prepararla este mismo día.">
+                            ¿Te atreves?
+                            <span class="arrow">➔</span>
+                        </a>
+                        <br>
+                    </h1>
+                    <div class="copyright" lang="en">
+                        Image by
+                        <a href="https://www.freepik.com/free-photo/close-up-crepes-with-cream-strawberries_973160.htm#from_element=detail_alsolike">
+                            <i>Valeria Aksakova on Freepik</i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Animación de vapor -->
+                <div class="smoke-wrap">
+                    <img class="smoke" src="img/assets/vapor.png" alt="smoke">
+                </div>
+                <div class="smoke-wrap">
+                    <img class="smoke2" src="img/assets/vapor.png" alt="smoke">
+                </div>
+                <div class="smoke-wrap">
+                    <img class="smoke3" src="img/assets/vapor.png" alt="smoke">
+                </div>
+            </div>
+        
+            <h2>Recommended recipes</h2>
+        
+            <div class="country-grid">
+                <a href="lemoncheesecake.html"> 
+                    <figure class="country-item">
+                        <img src="img/homemade-newyork-cheesecake-with-lemon-mint-healthy-organic-dessert-top-view.jpg" alt="Lemon Cheesecake">
+                        <figcaption>Lemon Cheesecake</figcaption>
+                    </figure>
+                </a>
+                <figure class="country-item">
+                    <img src="img/vecteezy_slice-of-vegetarian-lasagna-garnished-with-fresh-ingredients_49788410.jpg" alt="Lasaña de verduras">
+                    <figcaption>Lasaña de verduras</figcaption>
+                </figure>
+                <figure class="country-item">
+                    <img src="img/traditional-russian-pelmeni-dumplings-with-meat.jpg" alt="Pelmeni">
+                    <figcaption>Pelmeni</figcaption>
+                </figure>
+                <figure class="country-item">
+                  <a href="greece.html">
+                      <img src="img/vecteezy_a-fresh-mediterranean-salad-bowl-with-vegetables-olives_49007155.jpg" alt="Mediterranean Salad">
+                  </a>
+                  <figcaption>Ensalada mediterránea</figcaption>
+              </figure>
+              
+                <figure class="country-item">
+                    <img src="img/high-angle-asian-dish-with-salad-eggs.jpg" alt="Ramen">
+                    <figcaption>Ramen</figcaption>
+                </figure>
+                <figure class="country-item">
+                    <img src="img/vecteezy_classic-lasagna-with-bolognese-sauce_7238319.jpg" alt="Lasagna Bolognese">
+                    <figcaption>Lasagna Bolognese</figcaption>
+                </figure>
+            </div>
+
+            <div class="container" id="paises">
+                <h2>Recipes from the World.<br> Choose your destination!</h2>
+                <div class="country-grid">
+                    <figure class="country-item">
+                      <figure class="country-item">
+                        <a href="greece.html">
+                            <img src="img/travel-mediterranean-aegean-traditional-architecture.jpg" alt="Greece">
+                        </a>
+                        <figcaption>Greece</figcaption>
+                    </figure>
+                    
+                    </figure>
+                    <figure class="country-item">
+                        <img src="img/Spain.jpeg" alt="Spain">
+                        <figcaption>Spain</figcaption>
+                    </figure>
+                    <figure class="country-item">
+                        <img src="img/Russia.jpg" alt="Russia">
+                        <figcaption>Russia</figcaption>
+                    </figure>
+                    <figure class="country-item">
+                        <img src="img/Japan.jpg" alt="Japan">
+                        <figcaption>Japan</figcaption>
+                    </figure>
+                    <figure class="country-item">
+                        <img src="img/France.jpg" alt="Torre Eifel">
+                        <figcaption>France</figcaption>
+                    </figure>
+                    <figure class="country-item">
+                        <img src="img/Turkey.jpg" alt="Turkey">
+                        <figcaption>Turkey</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <h2>Explore your senses and get inspired!</h2>
+            <div class="country-grid">
+                <figure>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xcOnohwl6Zc?si=iBJXyhcEltzBIr1z" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </figure>
+
+                <figure>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tRRoYeKztbY?si=3oD58p7ynyy0Uok3" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </figure>
+
+                <figure>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HEEUrIQ_3O4?si=apXYyCqku_MtgQjo" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </figure>
+
+                <figure>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wekfwZhsXXA?si=bO4WYQwP_dd-05pW" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </figure>
+            </div>
+        </div>
+
+        <section class="tags-section">
+            <h2>Etiquetas</h2>
+            <div class="tags-container">
+                <span class="tag">Saludable</span>
+                <span class="tag">Sin gluten</span>
+                <span class="tag">Veganos</span>
+                <span class="tag">Sopas</span>
+                <span class="tag">Postre</span>
+                <span class="tag">Verduras</span>
+                <span class="tag">Pizza</span>
+                <span class="tag">Pasta</span>
+                <span class="tag">Rápidos</span>
+                <span class="tag">Económicos</span>
+                <span class="tag">Festivos</span>
+                <span class="tag">Ensaladas</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="flex-footer">
+                <div>
+                    <p>2025-2026. Oksana Golubeva.</p>
+                </div>
+
+                <div class="footer-right">
+                    <ul class="social">
+                        <li><a href="" aria-label="Ir a Instagram"><img src="img/instagram.png" alt="Logo d'Instagram"></a></li>
+                        <li><a href="" aria-label="Ir a Youtube"><img src="img/youtube.png" alt="Logo de Youtube"></a></li>
+                    </ul>
+                    <ul class="legal">
+                        <li><a href="">Política de privacidad</a></li>
+                        <li><a href="">Política de <i lang="en">cookies</i></a></li>
+                        <li><a href="">Aviso legal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+    <script>
+        let navbar = document.querySelector('.header .navbar');
+        let menu = document.querySelector('#menu');
+
+        menu.onclick = () => {
+            navbar.classList.toggle('active');
+        };
+
+        // Cambia el icono del menú hamburguesa
+        let changeIcon = function (icon) {
+            icon.classList.toggle('fa-times');
+        };
+
+        // Habilitar submenús en móviles con clic
+        document.querySelectorAll(".navbar ul li > a").forEach(link => {
+            link.addEventListener("click", function (event) {
+                let submenu = this.nextElementSibling;
+                if (submenu && submenu.tagName === "UL") {
+                    event.preventDefault(); // Evita la navegación
+                    this.parentElement.classList.toggle("show"); // Abre/cierra submenú
+                }
+            });
+        });
+    </script>
+</body>
 </html>
