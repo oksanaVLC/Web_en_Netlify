@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +8,12 @@
     <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   
+
     <include src="header.html"></include>
 
     
     <main>
+
         <div class="box">
             <input type="checkbox" name="checkbox" id="checkbox">
             <div class="search-box">
@@ -22,22 +23,15 @@
                 </label>
             </div>
         </div>
-        
-        <div class="enlaces"> 
-            <div class="dropdown2">
-              <a href="categories.html" class="dropbtn2" onclick="myFunction()" aria-label="Abrir menú de categorías">Categorías</a>
-              <div id="myDropdown" class="dropdown-content2">
-                    <a href="">Tipo de comida</a>
-                    <a href="">Dietas</a>
-                    <a href="#paises">Paises</a>
-                </div>
-            </div>
-            <a href=""> Destacados</a>
-            <a href=""> Más populares</a>
-            <a href="">Últimas </a>
-            <a href=""> Repostería</a>
-            <a href="">Veganos </a>
-            <a href="">Para niños </a>
+
+        <div class="scrollmenu">
+            <a href="categories.html">Categorías</a>
+            <a href="#">Destacados</a>
+            <a href="#">Más populares</a>
+            <a href="#">Últimas</a>
+            <a href="#">Repostería</a>
+            <a href="#">Veganos</a>
+            <a href="#">Para niños</a>  
         </div>
 
         <div class="container">
@@ -72,7 +66,7 @@
                 </div>
             </div>
         
-            <h2>Recommended recipes</h2>
+            <h2>Recetas recomendadas</h2>
         
             <div class="country-grid">
                 <a href="lemoncheesecake.html"> 
@@ -202,30 +196,18 @@
         </div>
     </footer>
 
-    <script src="app.js" type="module"></script>
+   
+   
     <script>
-        let navbar = document.querySelector('.header .navbar');
-        let menu = document.querySelector('#menu');
-
-        menu.onclick = () => {
-            navbar.classList.toggle('active');
-        };
-
-        // Cambia el icono del menú hamburguesa
-        let changeIcon = function (icon) {
-            icon.classList.toggle('fa-times');
-        };
-
-        // Habilitar submenús en móviles con clic
-        document.querySelectorAll(".navbar ul li > a").forEach(link => {
-            link.addEventListener("click", function (event) {
-                let submenu = this.nextElementSibling;
-                if (submenu && submenu.tagName === "UL") {
-                    event.preventDefault(); // Evita la navegación
-                    this.parentElement.classList.toggle("show"); // Abre/cierra submenú
-                }
-            });
-        });
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
     </script>
+    <script src="app.js" type="module"></script>
 </body>
 </html>

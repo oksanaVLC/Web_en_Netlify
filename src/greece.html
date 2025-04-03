@@ -9,35 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   </head>
 <body>
-  <header class="header">
-    <a href="index.html" class="logo">Lucky Recipe
-        <img src="img/vecteezy_lucky-clover-leaf_13713853.png" alt="logo">
-    </a>
-     <nav class="navbar">
-      <ul>
-        <li><a href="#">Inicio</a></li>
-              <li><a href="categories.html">Categorías</a></li>
-               <li><a href="#">Filtro &bigtriangledown;</a>
-              <ul>
-                  <li><a href="#">Tipo de comida</a></li>
-                  <li><a href="#">Dietas</a></li>
-                  <li><a href="#">Festivos&bigtriangledown;</a>
-                      <ul>
-                          <li><a href="#">Navidad</a></li>
-                          <li><a href="#">Pascua</a></li>
-                      </ul>
-                  </li>
-              </ul>
-          </li>
-          <li><a href="#">Eventos</a></li>
-          <li><a href="#">Restaurantes</a></li>
-          <li><a href="#">Noticias</a></li>
-          <li><a href="#">Contacto</a></li>
-      </ul>
-   </nav>
-
-    <div id="menu"><i class="fa-solid fa-bars" onclick="changeIcon(this)"></i></div>
-</header>
+  <include src="header.html"></include>
 
 
     <main>
@@ -51,26 +23,16 @@
         </div>
     </div>
 
-    
-       
-       
-  <div class="enlaces"> 
-    <div class="dropdown2">
-      <a href="categories.html" class="dropbtn2" onclick="myFunction()">Categorías</a>
-    <div id="myDropdown" class="dropdown-content2">
-        <a href="#">Tipo de comida</a>
-        <a href="#">Dietas</a>
-        <a href="#">Países</a>
-    </div>
-  
-          <a href=""> Destacados</a>
-          <a href=""> Más populares</a>
-          <a href="">Últimas </a>
-          <a href=""> Repostería</a>
-          <a href="">Veganos </a>
-          <a href="">Para niños </a>
-      </div>
- </div>  
+      
+    <div class="scrollmenu">
+      <a href="categories.html">Categorías</a>
+      <a href="#">Destacados</a>
+      <a href="#">Más populares</a>
+      <a href="#">Últimas</a>
+      <a href="#">Repostería</a>
+      <a href="#">Veganos</a>
+      <a href="#">Para niños</a>  
+  </div> 
 
  <h2>Grecia</h2>
 
@@ -208,21 +170,18 @@
   
   
   
-  
-      <script src="app.js" type="module"></script>
-      <script>
-          let navbar = document.querySelector('.header .navbar');
-          let menu = document.querySelector('#menu');
-  
-          menu.onclick = () => {
-              navbar.classList.toggle('active');
-              
+         <script>
+          function showSidebar(){
+              const sidebar = document.querySelector('.sidebar');
+              sidebar.style.display = 'flex';
           }
-  
-          let changeIcon = function(icon){
-              icon.classList.toggle('fa-times');
+          function hideSidebar(){
+              const sidebar = document.querySelector('.sidebar');
+              sidebar.style.display = 'none';
           }
       </script>
+      <script src="app.js" type="module"></script>
+      
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper('.swiper', {

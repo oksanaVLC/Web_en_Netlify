@@ -8,35 +8,7 @@
     <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="header">
-    <a href="index.html" class="logo">Lucky Recipe
-        <img src="img/vecteezy_lucky-clover-leaf_13713853.png" alt="logo">
-    </a>
-     <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-              <li><a href="categories.html">Categorías</a></li>
-               <li><a href="#">Filtro &bigtriangledown;</a>
-              <ul>
-                  <li><a href="#">Tipo de comida</a></li>
-                  <li><a href="#">Dietas</a></li>
-                  <li><a href="#">Festivos&bigtriangledown;</a>
-                      <ul>
-                          <li><a href="#">Navidad</a></li>
-                          <li><a href="#">Pascua</a></li>
-                      </ul>
-                  </li>
-              </ul>
-          </li>
-          <li><a href="#">Eventos</a></li>
-          <li><a href="#">Restaurantes</a></li>
-          <li><a href="#">Noticias</a></li>
-          <li><a href="#">Contacto</a></li>
-      </ul>
-   </nav>
-
-    <div id="menu"><i class="fa-solid fa-bars" onclick="changeIcon(this)"></i></div>
-</header>
+  <include src="header.html"></include>
 
     <main>
     <div class="box">
@@ -48,27 +20,17 @@
             </label>
         </div>
     </div>
-
     
        
-       
-  <div class="enlaces"> 
-        <div class="dropdown2">
-        <a href="categories.html" class="dropbtn2" onclick="myFunction()">Categorías</a>
-        <div id="myDropdown" class="dropdown-content2">
-            <a href="#">Tipo de comida</a>
-            <a href="#">Dietas</a>
-            <a href="#">Países</a>
-        </div>
+  <div class="scrollmenu">
+      <a href="categories.html">Categorías</a>
+      <a href="#">Destacados</a>
+      <a href="#">Más populares</a>
+      <a href="#">Últimas</a>
+      <a href="#">Repostería</a>
+      <a href="#">Veganos</a>
+      <a href="#">Para niños</a>  
   </div>
-          <a href=""> Destacados</a>
-          <a href=""> Más populares</a>
-          <a href="">Últimas </a>
-          <a href=""> Repostería</a>
-          <a href="">Veganos </a>
-          <a href="">Para niños </a>
-
-        </div>
  
           <div class="categories">
  
@@ -124,6 +86,24 @@
               </div>
              </div>
           </div> 
+
+          <section class="tags-section">
+            <h2>Etiquetas</h2>
+            <div class="tags-container">
+              <span class="tag">Saludable</span>
+              <span class="tag">Sin gluten</span>
+              <span class="tag">Veganos</span>
+              <span class="tag">Sopas</span>
+              <span class="tag">Postre</span>
+              <span class="tag">Verduras</span>
+              <span class="tag">Pizza</span>
+              <span class="tag">Pasta</span>
+              <span class="tag">Rápidos</span>
+              <span class="tag">Económicos</span>
+              <span class="tag">Festivos</span>
+              <span class="tag">Ensaladas</span>
+            </div>
+          </section>
     </main>
 
     <footer>
@@ -152,20 +132,17 @@
 
 
 
-    <script src="app.js" type="module"></script>
-    <script>
-        let navbar = document.querySelector('.header .navbar');
-        let menu = document.querySelector('#menu');
-
-        menu.onclick = () => {
-            navbar.classList.toggle('active');
-            
+       <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
         }
-
-        let changeIcon = function(icon){
-            icon.classList.toggle('fa-times');
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
         }
     </script>
+    <script src="app.js" type="module"></script>
     
     </body>
     </html>

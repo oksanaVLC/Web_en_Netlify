@@ -1,30 +1,23 @@
- <header class="header">
-        <a href="index.html" class="logo">
-            Lucky Recipe
-            <img src="img/vecteezy_lucky-clover-leaf_13713853.png" alt="logo">
-        </a>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="categories.html">Categorías</a></li>
-                <li><a href="#">Filtro &bigtriangledown;</a>
-                    <ul>
-                        <li><a href="#">Tipo de comida</a></li>
-                        <li><a href="#">Dietas</a></li>
-                        <li><a href="#">Festivos&bigtriangledown;</a>
-                            <ul>
-                                <li><a href="#">Navidad</a></li>
-                                <li><a href="#">Pascua</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">Eventos</a></li>
-                <li><a href="#">Restaurantes</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <div id="menu"><i class="fa-solid fa-bars" onclick="changeIcon(this)"></i></div>
-    </header>
+<header>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Filtros</a></li>
+            <li><a href="categories.html">Categorías</a></li>
+            <li><a href="#">Restaurantes</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <ul>
+            <li class="logo"> <a href="index.html">Lucky Recipe</a></li>
+            <li class="hideOnMobile"><a href="index.html">Inicio</a></li>
+            <li class="hideOnMobile" ><a href="#">Filtros</a></li>
+            <li class="hideOnMobile" ><a href="categories.html">Categorías</a></li>
+            <li class="hideOnMobile" ><a href="#">Restaurantes</a></li>
+            <li class="hideOnMobile" ><a href="#">Eventos</a></li>
+            <li class="hideOnMobile" ><a href="#">Contacto</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+</header>
