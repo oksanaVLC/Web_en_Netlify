@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+
  
 :root {
     --main: rgb(255, 249, 228);
@@ -40,6 +42,12 @@
     font-weight: 400;
     font-style: normal;
   }
+  .pompiere-regular {
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 /************************ Reglas generales *****/
 body{
@@ -63,13 +71,11 @@ h4 {
 }
 h1 {
   font-size: 2.5rem;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin: 2rem auto;
 }
 
 h2 {
-  font-size: 4rem;
-  margin: 1rem;
+  font-size: 3rem;
   font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -142,21 +148,21 @@ nav li:first-child{
   align-items: center;
 }
 .logo a{
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Aclonica", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
 .logo a:hover{
   color: var(--negro);
-  font-size: 32px;
+  font-size: 27px;
   
 }
 .logo::after{
   content: '';
   display: inline-block;
-  height: 26px;
-  width: 26px;
+  height: 25px;
+  width: 25px;
  background-image: url(img/vecteezy_lucky-clover-leaf_13713853.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -231,7 +237,7 @@ nav li:first-child{
     text-align: center;
     line-height: 40px;
     font-size: 2rem;
-    border-radius:20px;
+    border-radius:0 15px 15px 0;
 }
 
 #checkbox:checked ~ .search-box{
@@ -251,7 +257,7 @@ div.scrollmenu {
     overflow: auto;
     white-space: nowrap;
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     padding-bottom:10px;
@@ -360,14 +366,14 @@ footer {
 .tags-section {
     margin: 0 50px;
     text-align: center;
-    font-family: "Playfair Display", serif;
-    font-weight: 400;
-    font-style: normal;
+    margin-bottom: 5rem;
   }
   
   .tags-section h2 {
     margin-bottom: 2rem;
     color: var(--negro);
+    margin: 20px;
+   
   }
   
   .tags-container {
@@ -487,7 +493,8 @@ Página de inicio
   object-fit: cover; 
   display: block; 
 }
-.country-item figcaption {
+
+/*.country-item figcaption {
   position: absolute; 
   bottom: 0; 
   width: 100%;
@@ -499,11 +506,11 @@ Página de inicio
   margin: 0;
 }
 
-.country-item figcaption:hover {
+.country-item figcaption a:hover {
   cursor: pointer; 
   background-color: rgba(12, 137, 85, 0.9); 
   font-size: 30px;
-}
+}*/
 
 
 /**********************Flecha*************************/
@@ -640,10 +647,10 @@ font-size: 60px;
   object-fit: cover;
 }
 
-/* Copyright position inside the slide */
+/*******Otro estilo para Copyright*****/
 .copyright {
-  font-size: 1.2rem;
-  color: var(--negro);
+  font-size: 1rem;
+  color:rgba(0, 0, 0, 0.638);
   position: absolute;
   bottom: 1rem;
   right: 1rem;
@@ -651,13 +658,11 @@ font-size: 60px;
   padding: 0.5rem;
   border-radius: 5px;
 }
-
 .copyright a {
-  color: var(--negro);
+  color:rgba(0, 0, 0, 0.638);
   text-decoration: none;
-  font-size: 1rem;
+  
 }
-
 .copyright a:hover {
   color: var(--verde);
 }
@@ -677,7 +682,7 @@ font-size: 60px;
 
 /****************RECETAS*****************/
 .fotoreceta {
-  height: 40vh;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; 
@@ -690,6 +695,12 @@ font-size: 60px;
   text-align: center;
   overflow: hidden;
 }
+@media (min-width: 1200px){
+  .fotoreceta {
+    height: 550px;
+}
+}
+
 
 .fotoreceta::before {
   content: "";
@@ -697,15 +708,15 @@ font-size: 60px;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 30%; 
+  height: 23%; 
   background-color: rgba(255, 255, 255, 0.7);
 }
 
 .fotoreceta h1 {
   color: var(--negro);
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: "Playfair Display", serif;
- font-weight: 400;
+  font-weight: 400;
   font-style: italic;
   max-width: 400px;
   z-index: 1; 
@@ -746,9 +757,9 @@ font-size: 60px;
   margin: 5px 0;
   font-size: 2.5rem;
   text-align: center;
-  font-family: "Playfair Display", serif;
+  font-family: "Pompiere", sans-serif;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
 
   }
 .steps h3{
@@ -759,6 +770,7 @@ font-size: 60px;
 h3.mensaje{
   font-weight: 400;
   font-size: 2rem;
+  font-weight: 600;
   padding: 0 10px;
 }
 
@@ -769,6 +781,7 @@ h3.mensaje{
   background-color: var(--blanco);
   padding: 20px;
   padding-bottom: 40px;
+  
   text-align: center;
 }
 
@@ -777,9 +790,9 @@ h3.mensaje{
   position:relative ;
   font-size: 2.5rem;
   line-height: 4rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Pompiere", sans-serif;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   padding: 0 20px;
   margin: 5px 0;
 }
@@ -801,7 +814,7 @@ h3.mensaje{
   display: flex;
   justify-content:center;  
   align-items: center; 
-  margin: 40px 0;
+  margin: 20px 0;
  gap: 20px;
 }
 
@@ -812,11 +825,11 @@ h3.mensaje{
 
 .time-item i {
   margin-right: 10px;  
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .time-item span {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 
@@ -976,6 +989,7 @@ h3.mensaje{
 .categories h2 {
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .category {
