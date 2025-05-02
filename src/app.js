@@ -32,3 +32,5 @@ function displayResults(results) {
     resultsContainer.appendChild(li);
   });
 }
+
+import 'animate.css';

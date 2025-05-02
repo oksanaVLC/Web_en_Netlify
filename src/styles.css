@@ -23,6 +23,9 @@
     list-style: none;
     text-decoration: none;
 }
+a{
+  color: var(--negro);
+}
 
 /*FONTS*/
 .playfair-display {
@@ -56,7 +59,17 @@ body{
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-style: normal;
+    padding-bottom: 60px;
 }
+
+@media(min-width:1655px){
+body{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+}
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -79,6 +92,7 @@ h2 {
   font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin: 10px;
 }
 
 img {
@@ -163,11 +177,15 @@ nav li:first-child{
   display: inline-block;
   height: 25px;
   width: 25px;
- background-image: url(img/vecteezy_lucky-clover-leaf_13713853.png);
+  background-image: url('img/lucky-clover.avif'), 
+                    url('img/lucky-clover.webp'),
+                    url('img/vecteezy_lucky-clover-leaf_13713853.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+
 .menu-button{
     display: none;
   }
@@ -189,6 +207,13 @@ nav li:first-child{
     width: 100%;
   }
 
+}
+@media(min-width:1655px){
+  nav{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
 }
 
 /********************Search Bar**************/
@@ -261,7 +286,7 @@ div.scrollmenu {
     text-align: center;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     padding-bottom:10px;
-    z-index: 10; /* No me ha dejado que los enlaces de la barra horizontal sean utilizables, ya que la capa de vapor los cubre a pesar de tener un z-index de 0. */
+    
 }
 
 div.scrollmenu a {
@@ -367,6 +392,10 @@ footer {
     margin: 0 50px;
     text-align: center;
     margin-bottom: 5rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: italic;
+    
   }
   
   .tags-section h2 {
@@ -387,8 +416,9 @@ footer {
   .tag {
     padding: .5rem 1rem;
     font-size: 2rem;
-    background-color: var(--verde); 
-    color: #fff;
+   
+    background-color: rgba(42, 200, 116, 0.3);
+    color: var(--negro);
     border-radius: 20px;
     box-shadow: 0 2px 5px var(--negro);
     transition: transform 0.2s, background-color 0.3s;
@@ -397,7 +427,7 @@ footer {
   }
   
   .tag:hover {
-    background-color: var(--verde);
+    background-color: var(--blanco);
     transform: scale(1.1);
   }
   
@@ -406,7 +436,91 @@ footer {
 /************************************************************
 Página de inicio
 *************************************************************/
-  
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes bounceIn {
+  0% {
+    -webkit-transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+/* Multicolor box frame animation)*/
+.animated-border {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  border-radius: 15px; 
+  overflow: hidden; /* Asegura que el contenido no se salga del borde */
+}
+
+.animated-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 45px; /* Bordes redondeados */
+  padding: 5px; /* Tamaño del borde */
+  margin: -15px;
+  background: linear-gradient(90deg, yellow, pink, green, yellow); /* Gradiente de colores */
+  background-size: 300% 300%; /* Tamaño de animación */
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0); /* Oculta el fondo interno */
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out; /* Combina para mostrar solo el borde */
+  mask-composite: exclude;
+  animation: slideColors 3s linear infinite; /* Animación infinita */
+}
+
+@keyframes slideColors {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -100% 0%;
+  }
+}
+
+
+
+
+.arrow-image {
+  width: 80px; 
+
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.arrow-image:hover {
+  transform: translateX(10px); /* Efecto de desplazamiento al pasar el cursor */
+}
+
+
+/***/
+
 .hero-image {
     height: 40vh;
     width:100%;
@@ -415,13 +529,14 @@ Página de inicio
     justify-content: flex-start; 
     align-items: flex-start; 
     position: relative;
-    background-image: url(img/close-up-crepes-with-cream-strawberries.jpg);
+    /*background-image: url(img/close-up-crepes-with-cream-strawberries.jpg);*/
     background-size: cover;
     background-position: center;
     color: var(--negro);
     text-align: center;
     padding: 10px;
     margin-bottom: 30px;
+   
 }
 
 .hero-image h1 {
@@ -429,15 +544,35 @@ Página de inicio
   font-size: 40px;
   font-style: italic;
   margin-top: 1rem;
-  margin-right: 200px;
+  margin-right: 180px;
+  margin-left: 30px;
   font-family: "Playfair Display", serif;
   font-weight:400;
   max-width: 400px;
+  animation: bounceIn 1s ease-out;
+  -webkit-animation: bounceIn 1s ease-out; /* Añadir para compatibilidad con Safari */
 }
 
 @media (max-width: 768px){
   .hero-image h1 {
   font-size: 3rem;
+  }
+  .hero-image {
+    background-image: url(img/close-up-crepes-with-cream-strawberries1080px.gif);
+  }
+}
+@media (min-width: 767px){
+  .hero-image {
+    background-image: url('img/close-up-crepes-with-cream-strawberries1500px.gif');
+  }
+}
+@media (min-width: 1200px) {
+  .hero-image {
+    background-image: url('img/close-up-crepes-with-cream-strawberries.jpg');
+  }
+  .hero-image h1{
+    margin-left: 100px;
+    font-size: 5rem;
   }
 }
 
@@ -461,6 +596,51 @@ Página de inicio
   
 }
 
+.cook {
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 200px;
+  margin-bottom: -15px;
+}
+.cook:hover {
+  animation: tada 1s; 
+}
+
+@media (min-width: 992px) {
+  .cook{
+    width: 250px;
+    margin-bottom: -23px;
+}
+}
+
+.globo:hover {
+  animation: flip 1s; 
+}
+
+.picnic{
+  height: 40vh;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: var(--negro);
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+  background-image: url('img/picnic-french-alps-with-lake-panoramic-view.webp');
+}
+
+@media (max-width: 748px) {
+  .picnic{
+    background-image: url('img/picnic-cropped.webp');
+  }
+}
+
 /*****Grid**************/
 .country-grid {
   display: grid;
@@ -468,7 +648,7 @@ Página de inicio
   gap: 20px; 
   padding: 20px;
   background-color: var(--blanco);
-  margin: 30px;
+  margin: 10px;
 }
 
 .country-item {
@@ -511,6 +691,7 @@ Página de inicio
   background-color: rgba(12, 137, 85, 0.9); 
   font-size: 30px;
 }
+
 
 
 /**********************Flecha*************************/
@@ -688,7 +869,10 @@ font-size: 60px;
   justify-content: flex-end; 
   align-items: center;
   position: relative;
-  background-image: url(img/homemade-newyork-cheesecake-with-lemon-mint-healthy-organic-dessert-top-view.jpg);
+  background-image: image-set(
+    url('img/homemade-newyork-cheesecake-with-lemon-mint-healthy-organic-dessert-top-view.jpg') 1x,
+    url('img/homemade-newyork-cheesecake-3120px.jpg') 2x
+  );
   background-size: cover;
   background-position: center;
   color: var(--negro);
@@ -736,14 +920,29 @@ font-size: 60px;
   border-radius: 50%; 
   padding: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
-  transition: all 0.3s ease;
+  transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; 
 }
 
 /* Corazón cuando está en estado "liked" */
 .heart.liked {
   color: red; 
-  background-color: white; 
+  box-shadow: 0px 6px 8px rgba(255, 0, 0, 0.3);
+  transform: scale(1.2); 
+; 
 }
+img.golden {
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  width: 35px;
+  height: auto;
+}
+.estrellas{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
 
 
 /***************Lemon Cheesecake******************/
@@ -761,7 +960,12 @@ font-size: 60px;
   font-weight: 400;
   font-style: normal;
 
-  }
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2rem;
+}
+
 .steps h3{
   font-family: "Playfair Display", serif;
  font-weight: 400;
@@ -781,7 +985,6 @@ h3.mensaje{
   background-color: var(--blanco);
   padding: 20px;
   padding-bottom: 40px;
-  
   text-align: center;
 }
 
@@ -790,9 +993,10 @@ h3.mensaje{
   position:relative ;
   font-size: 2.5rem;
   line-height: 4rem;
-  font-family: "Pompiere", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
+  font-size: 2rem;
   padding: 0 20px;
   margin: 5px 0;
 }
@@ -839,8 +1043,9 @@ h3.mensaje{
   position: absolute;
   left: 55%;
   transform: translateX(-50%);
-  bottom: 150px; /* Ajusta la posición del vapor */
   z-index: 0;
+ right:50px;
+  overflow: hidden;
  
 }
 
@@ -979,7 +1184,12 @@ h3.mensaje{
 
 @media(max-width:1223px){
     .smoke-wrap{
-        display:none;
+        display:; /*none*/
+        top: ;
+       
+    }
+    .smoke3 {
+      width: ;
     }
 }
 
@@ -1039,3 +1249,53 @@ h3.mensaje{
 .categories .category p {
   font-size: 25px; 
 }
+
+/***************Sticky footer******/
+
+.footer-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color:var(--blanco);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-item {
+  text-decoration: none;
+  color: var(--negro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+
+.footer-item img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+.footer-item span {
+  font-size: 17px;
+}
+
+.footer-item:hover {
+  color: var(--verde)
+}
+
+@media screen and (min-width: 741px) {
+  .footer-bar{
+    display: none;
+  }
+}
+
+
+
+
