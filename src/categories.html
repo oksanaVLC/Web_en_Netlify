@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicación de recetas Lucky Recipe. Categorías de recetas.</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/lucky-clover.webp" type="image/webp">
     <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
   <include src="header.html"></include>
@@ -38,7 +40,13 @@
             <h2>Categorías</h2>
             <div class="category-grid">
               <div class="category">
-                <img src="img/vecteezy_south-korean-food_.jpg" alt="Arroces">
+
+                <picture>
+                  <source srcset="img/vecteezy_south-korean-food_.jpg?as=avif" type="image/avif" />
+                  <source srcset="img/vecteezy_south-korean-food_.jpg?as=webp" type="image/webp" />
+                  <img src="img/vecteezy_south-korean-food_.jpg" alt="Arroces">
+              </picture>
+
                 <p>Arroces</p>
               </div>
               <div class="category">

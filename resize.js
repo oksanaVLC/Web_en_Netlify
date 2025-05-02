@@ -501,7 +501,7 @@ sharp("src\\img\\picnic-cropped.jpg")
       console.log(info);
     }
   });
-*/
+
 
 
 const sharp = require('sharp');
@@ -513,5 +513,17 @@ sharp("src\\img\\homemade-newyork-cheesecake-with-lemon-mint-healthy-organic-des
       console.error("Error al procesar la imagen:", err);
     } else {
       console.log("Imagen procesada con éxito:", info);
+    }
+  });
+  */
+
+  const sharp = require('sharp');
+
+sharp("src\\img\\vecteezy_south-korean-food_.jpg")
+  .toFile("src\\img\\vecteezy_south-korean-food_.webp", (err, info) => {
+    if (err) {
+      console.error("Error al convertir la imagen:", err);
+    } else {
+      console.log("Imagen convertida con éxito:", info);
     }
   });
