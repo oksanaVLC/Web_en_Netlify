@@ -157,6 +157,27 @@ nav li:first-child{
 .sidebar a:hover{
     color: var(--verde);
   }
+
+
+
+/******************Animación de un svg con CSS*************
+
+  .rotating-svg {
+    display: inline-block;
+    animation: rotate 2s linear infinite;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+*******/
+
 .logo{
   display:flex;
   align-items: center;
@@ -595,7 +616,7 @@ Página de inicio
   color: var(--verde);
   
 }
-
+/*
 .cook {
   position: absolute; 
   bottom: 0; 
@@ -603,6 +624,13 @@ Página de inicio
   width: 150px;
   margin-bottom: -15px;
 }
+  */
+  .cook {
+    
+    width: 150px;
+    
+  }
+
 .cook:hover {
   animation: tada 1s; 
 }
