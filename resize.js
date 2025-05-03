@@ -515,7 +515,7 @@ sharp("src\\img\\homemade-newyork-cheesecake-with-lemon-mint-healthy-organic-des
       console.log("Imagen procesada con éxito:", info);
     }
   });
-  */
+  
 
   const sharp = require('sharp');
 
@@ -527,3 +527,53 @@ sharp("src\\img\\vecteezy_south-korean-food_.jpg")
       console.log("Imagen convertida con éxito:", info);
     }
   });
+*/
+
+const sharp = require('sharp');
+
+sharp("src\\img\\vecteezy_fresh-vegetables-cartoon_44766741.png")
+  .toFile("src\\img\\vecteezy_fresh-vegetables-cartoon_44766741.webp", (err, info) => {
+    if (err) {
+      console.error("Error al convertir la imagen:", err);
+    } else {
+      console.log("Imagen convertida con éxito:", info);
+    }
+  });
+
+  sharp("src\\img\\vecteezy_global-international-food-menu-restaurant-logo-global_11516427.jpg")
+  .toFile("src\\img\\vecteezy_global-international-food-menu-restaurant-logo-global_11516427.webp", (err, info) => {
+    if (err) {
+      console.error("Error al convertir la imagen:", err);
+    } else {
+      console.log("Imagen convertida con éxito:", info);
+    }
+  });
+
+  sharp("src\\img\\vecteezy_delicious-creamy-mushroom-soup-served-in-a-rustic-bowl_53812793.png")
+  .toFile("src\\img\\vecteezy_delicious-creamy-mushroom-soup-served-in-a-rustic-bowl_53812793.webp", (err, info) => {
+    if (err) {
+      console.error("Error al convertir la imagen:", err);
+    } else {
+      console.log("Imagen convertida con éxito:", info);
+    }
+  });
+
+  sharp("src\\img\\vecteezy_a-fresh-mediterranean-salad-bowl-with-vegetables-olives_49007155.jpg")
+  .toFile("src\\img\\vecteezy_a-fresh-mediterranean-salad-bowl-with-vegetables-olives_49007155.webp", (err, info) => {
+    if (err) {
+      console.error("Error al convertir la imagen:", err);
+    } else {
+      console.log("Imagen convertida con éxito:", info);
+    }
+  });
+
+  sharp("src\\img\\vecteezy_tiramisu-dessert-and-coffee-cup-on-light-background_21174408.jpg")
+  .toFile("src\\img\\vecteezy_tiramisu-dessert-and-coffee-cup-on-light-background_21174408.webp", (err, info) => {
+    if (err) {
+      console.error("Error al convertir la imagen:", err);
+    } else {
+      console.log("Imagen convertida con éxito:", info);
+    }
+  });
+
+  
