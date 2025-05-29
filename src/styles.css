@@ -513,7 +513,6 @@ Página de inicio
     justify-content: flex-start; 
     align-items: flex-start; 
     position: relative;
-    /*background-image: url(img/close-up-crepes-with-cream-strawberries.jpg);*/
     background-size: cover;
     background-position: center;
     color: var(--negro);
@@ -610,7 +609,7 @@ Página de inicio
 }
 
 .picnic{
-  height: 40vh;
+  height: auto;
   width:100%;
   display: flex;
   flex-direction: column;
@@ -623,14 +622,15 @@ Página de inicio
   text-align: center;
   padding: 10px;
   margin-bottom: 30px;
-  background-image: url('img/picnic-french-alps-with-lake-panoramic-view.webp');
+
 }
 
-@media (max-width: 748px) {
-  .picnic{
-    background-image: url('img/picnic-cropped.webp');
-  }
-}
+
+
+
+
+
+
 
 /*****Grid**************/
 .country-grid {

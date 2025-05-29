@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/vecteezy_lucky-clover-leaf_13713853.gif" type="image/webp">
 
+
 </head>
 <body>
   
@@ -16,15 +17,18 @@
     
     <main>
 
-        <div class="box">
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <div class="search-box">
-                <input type="text" placeholder="Buscar recetas...">
-                <label for="checkbox" class="search-icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </label>
-            </div>
-        </div>
+     <div class="box">
+    <input type="checkbox" name="checkbox" id="checkbox">
+    <div class="search-box">
+        <input type="text" id="searchBar" placeholder="Buscar recetas...">
+        <label for="checkbox" class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+    </div>
+    <!-- Resultados de búsqueda
+    <ul id="results"></ul> -->
+</div>
+
 
         <div class="scrollmenu">
         
@@ -263,14 +267,24 @@
                 </div>
             </div>
             <h2>Ideas para picnic</h2>
-            <div class="picnic">
-                <div class="copyright" lang="en">
-                         Image by
-                        <a href="https://www.freepik.com/free-photo/picnic-french-alps-with-lake-panoramic-view_10585400.htm#fromView=search&page=1&position=29&uuid=3a7cb839-faa1-4285-b04c-fbcad724410c&query=picnic+in+the+mountain">
-                            Image by <i>vwalakte on Freepik</i> 
-                        </a>
-                </div>
-            </div>
+       
+
+            
+<div class="picnic">
+  <picture>
+    <source srcset="img/picnic-cropped.webp" media="(max-width: 748px)">
+    <img src="img/picnic-french-alps-with-lake-panoramic-view.webp" alt="Picnic in the French Alps with a panoramic view of the lake">
+  </picture>
+  <div class="copyright" lang="en">
+    Image by
+    <a href="https://www.freepik.com/free-photo/picnic-french-alps-with-lake-panoramic-view_10585400.htm#fromView=search&page=1&position=29&uuid=3a7cb839-faa1-4285-b04c-fbcad724410c&query=picnic+in+the+mountain">
+      Image by <i>vwalakte on Freepik</i>
+    </a>
+  </div>
+</div>
+
+
+
 
             
             <h2>Explore your senses and get inspired!</h2>
