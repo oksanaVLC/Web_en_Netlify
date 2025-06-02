@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/vecteezy_lucky-clover-leaf_13713853.gif" type="image/webp">
-
-
+    <script src="sidebar.js" defer></script>
+    
+     <!-- The "defer" attribute is explicitly included for clarity, though it's implicit with type="module" -->
+    <script src="app.js" type="module" defer></script> 
 </head>
 <body>
   
@@ -312,16 +314,7 @@
        
       
    
-    <script>
-        function showSidebar(){
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = 'flex';
-        }
-        function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = 'none';
-        }
-    </script>
-    <script src="app.js" type="module"></script>
+   
+ 
 </body>
 </html>
