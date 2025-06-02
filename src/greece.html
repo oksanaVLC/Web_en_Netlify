@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicación de recetas Lucky Recipe. Recetas de Grecia.</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="icon" href="img/lucky-clover.webp" type="image/webp">
+
+    <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous"></script>
+    <script src="sidebar.js" defer></script>
+    <!-- The "defer" attribute is explicitly included for clarity, though it's implicit with type="module" -->
+    <script src="app.js" type="module" defer></script> 
 
   </head>
 <body>
@@ -233,18 +237,7 @@
           </a>
       </div>
   
-         <script>
-          function showSidebar(){
-              const sidebar = document.querySelector('.sidebar');
-              sidebar.style.display = 'flex';
-          }
-          function hideSidebar(){
-              const sidebar = document.querySelector('.sidebar');
-              sidebar.style.display = 'none';
-          }
-      </script>
-      <script src="app.js" type="module"></script>
-      
+        
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper('.swiper', {
