@@ -7,10 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/lucky-clover.webp" type="image/webp">
     <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous"></script>
-    <script src="sidebar.js" defer></script>
-
-     <!-- The "defer" attribute is explicitly included for clarity, though it's implicit with type="module" -->
-    <script src="app.js" type="module" defer></script> 
 
 </head>
 <body>
@@ -210,7 +206,17 @@
     </div>
 
 
-   
+       <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+    <script src="app.js" type="module"></script>
     
     </body>
     </html>

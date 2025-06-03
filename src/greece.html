@@ -5,13 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicación de recetas Lucky Recipe. Recetas de Grecia.</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="icon" href="img/lucky-clover.webp" type="image/webp">
-
-    <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous"></script>
-    <script src="sidebar.js" defer></script>
-    <!-- The "defer" attribute is explicitly included for clarity, though it's implicit with type="module" -->
-    <script src="app.js" type="module" defer></script> 
 
   </head>
 <body>
@@ -146,28 +142,6 @@
 
 
   </div>
-
-
-    <h2>Explore your senses and get inspired!</h2>
-            <div class="country-grid">
-                <figure>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xcOnohwl6Zc?si=iBJXyhcEltzBIr1z" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </figure>
-
-                <figure>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tRRoYeKztbY?si=3oD58p7ynyy0Uok3" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </figure>
-
-                <figure>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HEEUrIQ_3O4?si=apXYyCqku_MtgQjo" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </figure>
-
-                <figure>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wekfwZhsXXA?si=bO4WYQwP_dd-05pW" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </figure>
-            </div>
-        </div>
-
  
   <section class="tags-section">
     <h2>Etiquetas</h2>
@@ -237,7 +211,18 @@
           </a>
       </div>
   
-        
+         <script>
+          function showSidebar(){
+              const sidebar = document.querySelector('.sidebar');
+              sidebar.style.display = 'flex';
+          }
+          function hideSidebar(){
+              const sidebar = document.querySelector('.sidebar');
+              sidebar.style.display = 'none';
+          }
+      </script>
+      <script src="app.js" type="module"></script>
+      
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper('.swiper', {

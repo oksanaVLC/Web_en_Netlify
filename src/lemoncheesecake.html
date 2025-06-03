@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" href="img/lucky-clover.webp" type="image/webp">
-    <script src="sidebar.js" defer></script>
-    <script src="liked.js" defer></script>
-        <!-- The "defer" attribute is explicitly included for clarity, though it's implicit with type="module" -->
-    <script src="app.js" type="module" defer></script> 
 
 </head>
 <body>
@@ -43,32 +39,13 @@
     
     <div class="fotoreceta"> 
       <div class="estrellas">
-    <picture>
-        <source srcset="img/golden.jpg?as=avif" type="image/avif">
-        <source srcset="img/golden.jpg?as=webp" type="image/webp">
         <img src="img/golden.jpg" class="golden" alt="Imagen con forma de estrella">
-    </picture>
-    <picture>
-        <source srcset="img/golden.jpg?as=avif" type="image/avif">
-        <source srcset="img/golden.jpg?as=webp" type="image/webp">
         <img src="img/golden.jpg" class="golden" alt="Imagen con forma de estrella">
-    </picture>
-    <picture>
-        <source srcset="img/golden.jpg?as=avif" type="image/avif">
-        <source srcset="img/golden.jpg?as=webp" type="image/webp">
         <img src="img/golden.jpg" class="golden" alt="Imagen con forma de estrella">
-    </picture>
-    <picture>
-        <source srcset="img/golden.jpg?as=avif" type="image/avif">
-        <source srcset="img/golden.jpg?as=webp" type="image/webp">
         <img src="img/golden.jpg" class="golden" alt="Imagen con forma de estrella">
-    </picture>
-    <picture>
-        <source srcset="img/golden.jpg?as=avif" type="image/avif">
-        <source srcset="img/golden.jpg?as=webp" type="image/webp">
         <img src="img/golden.jpg" class="golden" alt="Imagen con forma de estrella">
-    </picture>
-</div>
+
+      </div>
 
  
          <h1 lang="en">Lemon Cheesecake</h1> 
@@ -180,20 +157,47 @@
     </a>
     
   <a href="#my-recipes" class="footer-item">
-  <picture>
-    <source srcset="img/vecteezy_an-open-book-with-a-spoon-and-other-items_49475369.png?as=avif" type="image/avif">
-    <source srcset="img/vecteezy_an-open-book-with-a-spoon-and-other-items_49475369.png?as=webp" type="image/webp">
-    <img src="img/vecteezy_an-open-book-with-a-spoon-and-other-items_49475369.png" alt="Mis Recetas" style="width: 35px; height: auto;">
-</picture>
-
+    <img src="img/vecteezy_an-open-book-with-a-spoon-and-other-items_49475369.png" alt="Mis Recetas" style="width: 35px; height: auto;" />
     <span>Mis Recetas</span>
   </a>
 </div>
   
- 
+    <script>
+            // Función para alternar entre "Me gusta" y "No me gusta"
+            function toggleHeart() {
+                const heart = document.getElementById('heart');
+                if (heart.classList.contains('unliked')) {
+                    heart.classList.remove('unliked');
+                    heart.classList.add('liked');
+                } else {
+                    heart.classList.remove('liked');
+                    heart.classList.add('unliked');
+                }
+            }
+</script>
+  
+<script>
+  function showSidebar(){
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'flex';
+  }
+  function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'none';
+  }
+</script>
+<script src="app.js" type="module"></script>
 
-
-
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
 </body>
 </html>
