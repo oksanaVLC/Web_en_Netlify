@@ -642,6 +642,10 @@ Página de inicio
   margin: 10px;
 }
 
+
+
+
+
 .country-item {
   position: relative; 
   margin: 0; 
@@ -1298,3 +1302,73 @@ h3.mensaje{
 
 
 
+/*CREANDO LA FECHADA PARA LOS IFRAMES*/
+
+
+  .iframe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; 
+    padding: 20px;
+    background-color: var(--blanco);
+    margin: 10px;
+  }
+
+  .iframe-item {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Ratio 16:9 */
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .iframe-item:hover {
+    transform: scale(1.05);
+  }
+
+  /* Miniatura y iframe ocupan todo el contenedor */
+  .iframe-item iframe,
+  .iframe-item .youtube-facade {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    object-fit: cover;
+  }
+
+  /* Flecha de “play” centrada */
+  .iframe-item .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    transition: background 0.3s ease;
+    pointer-events: none; /* Para que no interfiera con el click */
+  }
+
+  .iframe-item:hover .play-button {
+    background: rgba(0,0,0,0.8);
+  }
+
+  /* Triángulo de play */
+  .iframe-item .play-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    border-style: solid;
+    border-width: 12px 0 12px 20px;
+    border-color: transparent transparent transparent white;
+  }
+
+  .iframe-item:hover .play-button::before {
+  border-color: transparent transparent transparent red;
+}

@@ -14,6 +14,9 @@
    <script src="app.js" type="module" defer></script>
 
 
+
+
+
 </head>
 <body>
   
@@ -293,24 +296,69 @@
 
             
             <h2>Explore your senses and get inspired!</h2>
-            <div class="country-grid">
-                <figure>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xcOnohwl6Zc?si=iBJXyhcEltzBIr1z" loading="lazy" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </figure>
+            
 
-                <figure>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tRRoYeKztbY?si=3oD58p7ynyy0Uok3" loading="lazy" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </figure>
 
-                <figure>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HEEUrIQ_3O4?si=apXYyCqku_MtgQjo" loading="lazy" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </figure>
 
-                <figure>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wekfwZhsXXA?si=bO4WYQwP_dd-05pW" loading="lazy"  title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </figure>
-            </div>
-        </div>
+<div class="iframe-grid">
+
+  <figure class="iframe-item" data-video-id="xcOnohwl6Zc" title="Video 1">
+    <img class="youtube-facade" src="https://img.youtube.com/vi/xcOnohwl6Zc/hqdefault.jpg" alt="Video 1 thumbnail" loading="lazy">
+    <div class="play-button"></div>
+  </figure>
+
+  <figure class="iframe-item" data-video-id="tRRoYeKztbY" title="Video 2">
+    <img class="youtube-facade" src="https://img.youtube.com/vi/tRRoYeKztbY/hqdefault.jpg" alt="Video 2 thumbnail" loading="lazy">
+    <div class="play-button"></div>
+  </figure>
+
+  <figure class="iframe-item" data-video-id="HEEUrIQ_3O4" title="Video 3">
+    <img class="youtube-facade" src="https://img.youtube.com/vi/HEEUrIQ_3O4/hqdefault.jpg" alt="Video 3 thumbnail" loading="lazy">
+    <div class="play-button"></div>
+  </figure>
+
+  <figure class="iframe-item" data-video-id="wekfwZhsXXA" title="Video 4">
+    <img class="youtube-facade" src="https://img.youtube.com/vi/wekfwZhsXXA/hqdefault.jpg" alt="Video 4 thumbnail" loading="lazy">
+    <div class="play-button"></div>
+  </figure>
+
+</div>
+
+<script>
+  document.querySelectorAll('.iframe-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const videoId = item.getAttribute('data-video-id');
+      const iframe = document.createElement('iframe');
+
+      iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&controls=1`);
+      iframe.setAttribute('title', 'YouTube video player');
+      iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.setAttribute('loading', 'lazy');
+      iframe.style.border = 'none';
+
+      // Quitar la imagen y la flecha, añadir iframe
+      item.innerHTML = '';
+      item.appendChild(iframe);
+    });
+  });
+</script>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <section class="tags-section">
             <h2>Etiquetas</h2>
