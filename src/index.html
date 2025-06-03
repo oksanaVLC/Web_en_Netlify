@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicación de recetas Lucky Recipe. Recetas del mundo y para cada día.</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="img/vecteezy_lucky-clover-leaf_13713853.gif" type="image/webp">
+
+   <link rel="icon" type="image/svg+xml" href="img/favicon.svg"> <!-- opción moderna -->
+   <link rel="icon" type="image/png" href="img/favicon-96x96.png">
+
+   <script src="sidebar.js" defer></script>
+   <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous" defer></script>
+   <script src="app.js" type="module" defer></script>
 
 
 </head>
@@ -217,7 +222,7 @@
                         <picture>
                             <source srcset="img/greece.webp" type="image/webp">
                             <source srcset="img/greece.avif" type="image/avif">
-                            <img src="img/travel-mediterranean-aegean-traditional-architecture.jpg" alt="Greece">
+                            <img src="img/travel-mediterranean-aegean-traditional-architecture.jpg" alt="Greece" loading="lazy">
                         </picture>
                         <figcaption>Greece</figcaption>
                     </figure>
@@ -226,7 +231,7 @@
                     <picture>
                         <source srcset="img/spain.webp" type="image/webp">
                         <source srcset="img/spain.avif" type="image/avif">
-                        <img src="img/Spain.jpeg" alt="Spain">
+                          <img src="img/Spain.jpeg" alt="Spain" loading="lazy">
                     </picture>
                     <figcaption>Spain</figcaption>
                 </figure>
@@ -234,7 +239,7 @@
                     <picture>
                         <source srcset="img/russia.webp" type="image/webp">
                         <source srcset="img/russia.avif" type="image/avif">
-                        <img src="img/Russia.jpg" alt="Russia">
+                        <img src="img/Russia.jpg" alt="Russia" loading="lazy">
                     </picture>
                     <figcaption>Russia</figcaption>
                 </figure>
@@ -242,7 +247,7 @@
                     <picture>
                         <source srcset="img/japan.webp" type="image/webp">
                         <source srcset="img/japan.avif" type="image/avif">
-                        <img src="img/Japan.jpg" alt="Japan">
+                       <img src="img/Japan.jpg" alt="Japan" loading="lazy">
                     </picture>
                     <figcaption>Japan</figcaption>
                 </figure>
@@ -250,7 +255,7 @@
                     <picture>
                         <source srcset="img/eiffel-tower-view.webp" type="image/webp">
                         <source srcset="img/eiffel-tower-view.avif" type="image/avif">
-                        <img src="img/eiffel-tower-view.jpg" alt="Eiffel Tower">
+                        <img src="img/eiffel-tower-view.jpg" alt="Eiffel Tower" loading="lazy">
                     </picture>
                     <figcaption>France</figcaption>
                 </figure>
@@ -258,7 +263,7 @@
                     <picture>
                         <source srcset="img/turkey.webp" type="image/webp">
                         <source srcset="img/turkey.avif" type="image/avif">
-                        <img src="img/Turkey.jpg" alt="Turkey">
+                         <img src="img/Turkey.jpg" alt="Turkey" loading="lazy">
                     </picture>
                     <figcaption>Turkey</figcaption>
                 </figure>
@@ -290,19 +295,19 @@
             <h2>Explore your senses and get inspired!</h2>
             <div class="country-grid">
                 <figure>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xcOnohwl6Zc?si=iBJXyhcEltzBIr1z" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xcOnohwl6Zc?si=iBJXyhcEltzBIr1z" loading="lazy" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </figure>
 
                 <figure>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tRRoYeKztbY?si=3oD58p7ynyy0Uok3" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tRRoYeKztbY?si=3oD58p7ynyy0Uok3" loading="lazy" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </figure>
 
                 <figure>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HEEUrIQ_3O4?si=apXYyCqku_MtgQjo" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HEEUrIQ_3O4?si=apXYyCqku_MtgQjo" loading="lazy" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </figure>
 
                 <figure>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wekfwZhsXXA?si=bO4WYQwP_dd-05pW" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wekfwZhsXXA?si=bO4WYQwP_dd-05pW" loading="lazy"  title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </figure>
             </div>
         </div>
@@ -378,16 +383,7 @@
        
       
    
-    <script>
-        function showSidebar(){
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = 'flex';
-        }
-        function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = 'none';
-        }
-    </script>
-    <script src="app.js" type="module"></script>
+ 
+    
 </body>
 </html>

@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicación de recetas Lucky Recipe. Categorías de recetas.</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="img/lucky-clover.webp" type="image/webp">
-    <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous"></script>
+       
+
+   <link rel="icon" type="image/svg+xml" href="img/favicon.svg"> <!-- opción moderna -->
+   <link rel="icon" type="image/png" href="img/favicon-96x96.png">
+
+
+    <script src="sidebar.js" defer></script>
+    <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous" defer></script>
+    <script src="app.js" type="module" defer></script>
 
 </head>
 <body>
@@ -206,17 +213,6 @@
     </div>
 
 
-       <script>
-        function showSidebar(){
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = 'flex';
-        }
-        function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = 'none';
-        }
-    </script>
-    <script src="app.js" type="module"></script>
     
     </body>
     </html>
