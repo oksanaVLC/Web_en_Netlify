@@ -11,10 +11,10 @@
    <link rel="icon" type="image/png" href="img/favicon-96x96.png">
 
    <script src="sidebar.js" defer></script>
-   <script src="swiper.js" defer></script>
+  
    <script src="app.js" type="module" defer></script>
    <script src="https://kit.fontawesome.com/d5fd388615.js" crossorigin="anonymous" defer></script>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
 
 
 
@@ -219,7 +219,30 @@
             <span>Mis Recetas</span>
           </a>
       </div>
-  
-       
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       <script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+ 
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+</script>
 </body>
 </html>
