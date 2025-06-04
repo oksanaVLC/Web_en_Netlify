@@ -1185,16 +1185,6 @@ h3.mensaje{
     text-decoration: none; 
 }
 
-@media(max-width:1223px){
-    .smoke-wrap{
-        display:; /*none*/
-        top: ;
-       
-    }
-    .smoke3 {
-      width: ;
-    }
-}
 
 
 /*****************Categories***********/
