@@ -575,7 +575,7 @@ sharp("src\\img\\vecteezy_fresh-vegetables-cartoon_44766741.png")
       console.log("Imagen convertida con éxito:", info);
     }
   });
-*/
+
   
 
 
@@ -587,5 +587,25 @@ sharp("src\\img\\close-up-crepes-with-cream-strawberries.jpg")
       console.error("Error al convertir la imagen:", err);
     } else {
       console.log("Imagen convertida con éxito:", info);
+    }
+  });
+
+
+  */
+
+const sharp = require('sharp');
+
+// Ruta de entrada y salida con barras invertidas
+const inputPath = "src\\img\\close-up-crepes-with-cream-strawberries.webp";
+const outputPath = "src\\img\\close-up-crepes-with-cream-strawberries-800px.webp";
+
+// Redimensionar la imagen
+sharp(inputPath)
+  .resize({ width: 800 }) // Redimensionar a 800 px de ancho
+  .toFile(outputPath, (err, info) => {
+    if (err) {
+      console.error("Error al procesar la imagen:", err);
+    } else {
+      console.log("Imagen procesada con éxito:", info);
     }
   });
