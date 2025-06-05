@@ -1,8 +1,8 @@
-/* Lucky Recipe hoja de estilos */
+/* Lucky Recipe hoja de estilos 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');*/
 
  
 :root {
@@ -540,19 +540,13 @@ Página de inicio
   .hero-image h1 {
   font-size: 3rem;
   }
-  .hero-image {
-    background-image: url(img/close-up-crepes-with-cream-strawberries1080px.gif);
-  }
+ 
 }
 @media (min-width: 767px){
-  .hero-image {
-    background-image: url('img/close-up-crepes-with-cream-strawberries1500px.gif');
-  }
+  
 }
 @media (min-width: 1200px) {
-  .hero-image {
-    background-image: url('img/close-up-crepes-with-cream-strawberries.jpg');
-  }
+  
   .hero-image h1{
     margin-left: 100px;
     font-size: 5rem;
@@ -1046,8 +1040,6 @@ h3.mensaje{
   bottom: 600px;
   left: 55%;
   transform: translateX(-50%);
-  z-index: 1000;
-  
   overflow: hidden;
  
 }
@@ -1057,63 +1049,64 @@ h3.mensaje{
 .smoke3 {
   filter: blur(5px);
   transform-origin: 50% 50%;
-  z-index: 1000;
+  z-index: ;
   
 }
 
 .smoke {
   animation: smoke1 3s linear infinite;
   animation-delay: 0.5s;
-  z-index: 1000;
+ 
 }
 
 .smoke2 {
   animation: smoke2 3s linear infinite;
   animation-delay: 1.5s;
-  z-index: 1000;
+ 
 }
 
 .smoke3 {
   width: 500px;
   animation: smoke3 4s linear infinite;
   animation-delay: 2.5s;
-  z-index: 1000;
+  
 }
+
 
 @keyframes smoke1 {
   0% {
     filter: blur(0px);
     transform: translateY(0px) scale(-1, 1);
     opacity: 0;
-    z-index: 1000;
+  
   }
 
   25% {
     filter: blur(3px);
     transform: translateY(-10px) scale(-1, 1.05);
     opacity: 0.5;
-    z-index: 1000;
+   
   }
 
   50% {
     filter: blur(5px);
     transform: translateY(-20px) scale(-1, 1.1);
     opacity: 1;
-    z-index: 1000;
+   
   }
 
   75% {
     filter: blur(5px);
     transform: translateY(-30px) scale(-1, 1.15);
     opacity: 0.5;
-    z-index: 1000;
+    
   }
 
   100% {
     filter: blur(7px);
     transform: translateY(-40px) scale(-1, 1.2);
     opacity: 0;
-    z-index: 1000;
+    
   }
 }
 
@@ -1122,35 +1115,35 @@ h3.mensaje{
     filter: blur(0px);
     transform: translateY(0px) scale(1);
     opacity: 0;
-    z-index: 1000;
+   
   }
 
   25% {
     filter: blur(3px);
     transform: translateY(-10px) scale(1.05);
     opacity: 0.5;
-    z-index: 1000;
+  
   }
 
   50% {
     filter: blur(5px);
     transform: translateY(-20px) scale(1.1);
     opacity: 1;
-    z-index: 1000;
+    
   }
 
   75% {
     filter: blur(5px);
     transform: translateY(-30px) scale(1.15);
     opacity: 0.5;
-    z-index: 1000;
+    
   }
 
   100% {
     filter: blur(7px);
     transform: translateY(-40px) scale(1.2);
     opacity: 0;
-    z-index: 1000;
+   
   }
 }
 
@@ -1159,50 +1152,36 @@ h3.mensaje{
     filter: blur(0px);
     transform: translateY(0px) scale(1);
     opacity: 0;
-    z-index: 1000;
+   
   }
 
   25% {
     filter: blur(3px);
     transform: translateY(-20px) scale(1.05);
     opacity: 0.5;
-    z-index: 1000;
+   
   }
 
   50% {
     filter: blur(5px);
     transform: translateY(-40px) scale(1.1);
     opacity: 1;
-    z-index: 1000;
+    
   }
 
   75% {
     filter: blur(5px);
     transform: translateY(-60px) scale(1.15);
     opacity: 0.5;
-    z-index: 1000;
+    
   }
 
   100% {
     filter: blur(7px);
     transform: translateY(-80px) scale(1.2);
     opacity: 0;
-    z-index: 1000;
+
   }
-}
-
-
-.image-attribution {
-    font-size: 0.9rem; 
-    color: #555; 
-    text-align: center; 
-    margin-top: 10px; 
-    margin-bottom: 10px; 
-}
-
-.image-attribution a {
-    color: #0077cc; 
-    text-decoration: none; 
 }
 
 
@@ -1467,3 +1446,56 @@ h3.mensaje{
 .copyright a:hover {
   color: var(--verde);
 }
+
+
+/***********ajustes a la barra de navegacion y la animación de smoke*********/
+
+.scrollmenu {
+    z-index: 10; 
+    position: relative;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.smoke-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.smoke-wrap {
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.smoke, .smoke2, .smoke3 {
+    filter: blur(5px);
+    transform-origin: 50% 50%;
+}
+
+.smoke {
+    animation: smoke1 3s linear infinite;
+    animation-delay: 0.5s;
+}
+
+.smoke2 {
+    animation: smoke2 3s linear infinite;
+    animation-delay: 1.5s;
+}
+
+.smoke3 {
+    width: 500px;
+    animation: smoke3 4s linear infinite;
+    animation-delay: 2.5s;
+}
+
+
+
+/****************/

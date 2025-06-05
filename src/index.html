@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicación de recetas Lucky Recipe. Recetas del mundo y para cada día.</title>
+
    <link rel="preload" href="img/close-up-crepes-with-cream-strawberries.webp" as="image" fetchpriority="high">
+
+   <!-- fonts en vez de usar import -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 
    <link rel="icon" type="image/svg+xml" href="img/favicon.svg"> <!-- opción moderna -->
@@ -38,78 +53,62 @@
     <ul id="results"></ul> -->
 </div>
 
+<div class="scrollmenu">
+    <a href="categories.html">Categorías</a>
+    <a href="#">Destacados</a>
+    <a href="#">Más populares</a>
+    <a href="#">Últimas</a>
+    <a href="#">Repostería</a>
+    <a href="#">Veganos</a>
+    <a href="#">Para niños</a>  
+</div>
 
-        <div class="scrollmenu">
-        
-            <a href="categories.html">Categorías</a>
-            <a href="#">Destacados</a>
-            <a href="#">Más populares</a>
-            <a href="#">Últimas</a>
-            <a href="#">Repostería</a>
-            <a href="#">Veganos</a>
-            <a href="#">Para niños</a>  
+<div class="container">
+    <div class="hero-image">
+        <picture class="hero-picture">
+            <source srcset="img/close-up-crepes-with-cream-strawberries.webp?width=800" type="image/webp" media="(max-width: 767px)">
+            <source srcset="img/close-up-crepes-with-cream-strawberries.webp" type="image/webp">
+            <img src="img/close-up-crepes-with-cream-strawberries.jpg" alt="Close-up of crepes with cream and strawberries" class="responsive-image" fetchpriority="high">
+        </picture>
+
+        <div class="content-container">
+            <a href="lemoncheesecake.html" aria-label="Pinchar el botón de la búsqueda de una receta aleatoria como un desafío para prepararla este mismo día.">
+                <h1 lang="en">
+                    ¿Cuál es tu <br /> lucky recipe hoy?<br />
+                    <img width="64" height="64" src="https://img.icons8.com/arcade/64/arrow.png" alt="arrow" class="arrow-image" /><br />
+                </h1>
+            </a>
+            <div class="copyright" lang="en">
+                Image by <a href="https://www.freepik.com/free-photo/close-up-crepes-with-cream-strawberries_973160.htm#from_element=detail_alsolike"><i>Valeria Aksakova on Freepik</i></a>
+            </div>
         </div>
-
-
-        <div class="container">
-         <div class="hero-image">
-  <picture class="hero-picture">
-    <source srcset="img/close-up-crepes-with-cream-strawberries.webp" type="image/webp">
-    <img 
-      src="img/close-up-crepes-with-cream-strawberries.jpg" 
-      alt="Close-up of crepes with cream and strawberries" 
-      class="responsive-image" 
-      height="auto"
-      fetchpriority="high"
-    />
-  </picture>
-
-  <div class="content-container">
-    <a href="lemoncheesecake.html" aria-label="Pinchar el botón de la búsqueda de una receta aleatoria como un desafío para prepararla este mismo día.">
-      <h1 lang="en">
-        ¿Cuál es tu <br />
-        lucky recipe hoy?<br />
-        <img width="64" height="64" src="https://img.icons8.com/arcade/64/arrow.png" alt="arrow" class="arrow-image" />
-        <br />
-      </h1>
-    </a>
-
-    <div class="copyright" lang="en">
-      Image by
-      <a href="https://www.freepik.com/free-photo/close-up-crepes-with-cream-strawberries_973160.htm#from_element=detail_alsolike">
-        <i>Valeria Aksakova on Freepik</i>
-      </a>
     </div>
-  </div>
+
+    <div class="smoke-container">
+        <div class="smoke-wrap">
+            <picture>
+                <source srcset="img/assets/vapor.png?as=webp&width=500" type="image/webp">
+                <source srcset="img/assets/vapor.png?as=avif&width=500" type="image/avif">
+                <img class="smoke" src="img/assets/vapor.png?width=500" alt="smoke">
+            </picture>
+        </div>
+        <div class="smoke-wrap">
+            <picture>
+                <source srcset="img/assets/vapor.png?as=webp&width=500" type="image/webp">
+                <source srcset="img/assets/vapor.png?as=avif&width=500" type="image/avif">
+                <img class="smoke2" src="img/assets/vapor.png?width=500" alt="smoke">
+            </picture>
+        </div>
+        <div class="smoke-wrap">
+            <picture>
+                <source srcset="img/assets/vapor.png?as=webp&width=500" type="image/webp">
+                <source srcset="img/assets/vapor.png?as=avif&width=500" type="image/avif">
+                <img class="smoke3" src="img/assets/vapor.png?width=500" alt="smoke">
+            </picture>
+        </div>
+    </div>
 </div>
 
-
-
-                
-    <div class="smoke-wrap">
-    <picture>
-        <source srcset="img/assets/vapor.png?as=webp&width=500" type="image/webp">
-        <source srcset="img/assets/vapor.png?as=avif&width=500" type="image/avif">
-        <img class="smoke" src="img/assets/vapor.png?width=500" alt="smoke">
-    </picture>
-</div>
-<div class="smoke-wrap">
-    <picture>
-        <source srcset="img/assets/vapor.png?as=webp&width=500" type="image/webp">
-        <source srcset="img/assets/vapor.png?as=avif&width=500" type="image/avif">
-        <img class="smoke2" src="img/assets/vapor.png?width=500" alt="smoke">
-    </picture>
-</div>
-<div class="smoke-wrap">
-    <picture>
-        <source srcset="img/assets/vapor.png?as=webp&width=500" type="image/webp">
-        <source srcset="img/assets/vapor.png?as=avif&width=500" type="image/avif">
-        <img class="smoke3" src="img/assets/vapor.png?width=500" alt="smoke">
-    </picture>
-</div>
-
-               
-  </div>
 
             
 
@@ -336,22 +335,38 @@
 <div class="iframe-grid">
 
   <figure class="iframe-item" data-video-id="xcOnohwl6Zc" title="Video 1">
-    <img class="youtube-facade" src="https://img.youtube.com/vi/xcOnohwl6Zc/hqdefault.jpg" alt="Video 1 thumbnail" loading="lazy">
+<picture>
+  <source srcset="https://img.youtube.com/vi/xcOnohwl6Zc/hqdefault.jpg?avif" type="image/avif">
+  <source srcset="https://img.youtube.com/vi/xcOnohwl6Zc/hqdefault.jpg?webp" type="image/webp">
+  <img class="youtube-facade" src="https://img.youtube.com/vi/xcOnohwl6Zc/hqdefault.jpg" alt="Video 1 thumbnail" loading="lazy">
+</picture>
     <div class="play-button"></div>
   </figure>
 
   <figure class="iframe-item" data-video-id="tRRoYeKztbY" title="Video 2">
-    <img class="youtube-facade" src="https://img.youtube.com/vi/tRRoYeKztbY/hqdefault.jpg" alt="Video 2 thumbnail" loading="lazy">
+<picture>
+  <source srcset="https://img.youtube.com/vi/tRRoYeKztbY/hqdefault.jpg?avif" type="image/avif">
+  <source srcset="https://img.youtube.com/vi/tRRoYeKztbY/hqdefault.jpg?webp" type="image/webp">
+  <img class="youtube-facade" src="https://img.youtube.com/vi/tRRoYeKztbY/hqdefault.jpg" alt="Video 2 thumbnail" loading="lazy">
+</picture>
     <div class="play-button"></div>
   </figure>
 
   <figure class="iframe-item" data-video-id="HEEUrIQ_3O4" title="Video 3">
-    <img class="youtube-facade" src="https://img.youtube.com/vi/HEEUrIQ_3O4/hqdefault.jpg" alt="Video 3 thumbnail" loading="lazy">
+<picture>
+  <source srcset="https://img.youtube.com/vi/HEEUrIQ_3O4/hqdefault.jpg?avif" type="image/avif">
+  <source srcset="https://img.youtube.com/vi/HEEUrIQ_3O4/hqdefault.jpg?webp" type="image/webp">
+  <img class="youtube-facade" src="https://img.youtube.com/vi/HEEUrIQ_3O4/hqdefault.jpg" alt="Video 3 thumbnail" loading="lazy">
+</picture>
     <div class="play-button"></div>
   </figure>
 
   <figure class="iframe-item" data-video-id="wekfwZhsXXA" title="Video 4">
-    <img class="youtube-facade" src="https://img.youtube.com/vi/wekfwZhsXXA/hqdefault.jpg" alt="Video 4 thumbnail" loading="lazy">
+<picture>
+  <source srcset="https://img.youtube.com/vi/wekfwZhsXXA/hqdefault.jpg?avif" type="image/avif">
+  <source srcset="https://img.youtube.com/vi/wekfwZhsXXA/hqdefault.jpg?webp" type="image/webp">
+  <img class="youtube-facade" src="https://img.youtube.com/vi/wekfwZhsXXA/hqdefault.jpg" alt="Video 4 thumbnail" loading="lazy">
+</picture>
     <div class="play-button"></div>
   </figure>
 
