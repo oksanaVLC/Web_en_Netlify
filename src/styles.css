@@ -1478,6 +1478,7 @@ h3.mensaje{
 .smoke, .smoke2, .smoke3 {
     filter: blur(5px);
     transform-origin: 50% 50%;
+      will-change: transform, opacity, filter;
 }
 
 .smoke {
