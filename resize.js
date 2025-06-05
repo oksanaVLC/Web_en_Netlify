@@ -527,7 +527,7 @@ sharp("src\\img\\vecteezy_south-korean-food_.jpg")
       console.log("Imagen convertida con éxito:", info);
     }
   });
-*/
+
 
 const sharp = require('sharp');
 
@@ -575,5 +575,17 @@ sharp("src\\img\\vecteezy_fresh-vegetables-cartoon_44766741.png")
       console.log("Imagen convertida con éxito:", info);
     }
   });
-
+*/
   
+
+
+   const sharp = require('sharp');
+
+sharp("src\\img\\close-up-crepes-with-cream-strawberries.jpg")
+  .toFile("src\\img\\close-up-crepes-with-cream-strawberries.webp", (err, info) => {
+    if (err) {
+      console.error("Error al convertir la imagen:", err);
+    } else {
+      console.log("Imagen convertida con éxito:", info);
+    }
+  });

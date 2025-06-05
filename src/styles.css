@@ -106,7 +106,7 @@ nav{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     font-size: 20px;
     position: fixed;
-    z-index: 1000;
+    z-index: 2000;
     width:100%;
 }
 nav ul{
@@ -1043,9 +1043,10 @@ h3.mensaje{
 
 .smoke-wrap {
   position: absolute;
+  bottom: 600px;
   left: 55%;
   transform: translateX(-50%);
-  z-index: 0;
+  z-index: 1000;
   
   overflow: hidden;
  
@@ -1056,23 +1057,27 @@ h3.mensaje{
 .smoke3 {
   filter: blur(5px);
   transform-origin: 50% 50%;
+  z-index: 1000;
   
 }
 
 .smoke {
   animation: smoke1 3s linear infinite;
   animation-delay: 0.5s;
+  z-index: 1000;
 }
 
 .smoke2 {
   animation: smoke2 3s linear infinite;
   animation-delay: 1.5s;
+  z-index: 1000;
 }
 
 .smoke3 {
   width: 500px;
   animation: smoke3 4s linear infinite;
   animation-delay: 2.5s;
+  z-index: 1000;
 }
 
 @keyframes smoke1 {
@@ -1080,30 +1085,35 @@ h3.mensaje{
     filter: blur(0px);
     transform: translateY(0px) scale(-1, 1);
     opacity: 0;
+    z-index: 1000;
   }
 
   25% {
     filter: blur(3px);
     transform: translateY(-10px) scale(-1, 1.05);
     opacity: 0.5;
+    z-index: 1000;
   }
 
   50% {
     filter: blur(5px);
     transform: translateY(-20px) scale(-1, 1.1);
     opacity: 1;
+    z-index: 1000;
   }
 
   75% {
     filter: blur(5px);
     transform: translateY(-30px) scale(-1, 1.15);
     opacity: 0.5;
+    z-index: 1000;
   }
 
   100% {
     filter: blur(7px);
     transform: translateY(-40px) scale(-1, 1.2);
     opacity: 0;
+    z-index: 1000;
   }
 }
 
@@ -1112,30 +1122,35 @@ h3.mensaje{
     filter: blur(0px);
     transform: translateY(0px) scale(1);
     opacity: 0;
+    z-index: 1000;
   }
 
   25% {
     filter: blur(3px);
     transform: translateY(-10px) scale(1.05);
     opacity: 0.5;
+    z-index: 1000;
   }
 
   50% {
     filter: blur(5px);
     transform: translateY(-20px) scale(1.1);
     opacity: 1;
+    z-index: 1000;
   }
 
   75% {
     filter: blur(5px);
     transform: translateY(-30px) scale(1.15);
     opacity: 0.5;
+    z-index: 1000;
   }
 
   100% {
     filter: blur(7px);
     transform: translateY(-40px) scale(1.2);
     opacity: 0;
+    z-index: 1000;
   }
 }
 
@@ -1144,30 +1159,35 @@ h3.mensaje{
     filter: blur(0px);
     transform: translateY(0px) scale(1);
     opacity: 0;
+    z-index: 1000;
   }
 
   25% {
     filter: blur(3px);
     transform: translateY(-20px) scale(1.05);
     opacity: 0.5;
+    z-index: 1000;
   }
 
   50% {
     filter: blur(5px);
     transform: translateY(-40px) scale(1.1);
     opacity: 1;
+    z-index: 1000;
   }
 
   75% {
     filter: blur(5px);
     transform: translateY(-60px) scale(1.15);
     opacity: 0.5;
+    z-index: 1000;
   }
 
   100% {
     filter: blur(7px);
     transform: translateY(-80px) scale(1.2);
     opacity: 0;
+    z-index: 1000;
   }
 }
 
@@ -1184,6 +1204,7 @@ h3.mensaje{
     color: #0077cc; 
     text-decoration: none; 
 }
+
 
 
 
@@ -1361,4 +1382,88 @@ h3.mensaje{
 
   .iframe-item:hover .play-button::before {
   border-color: transparent transparent transparent red;
+}
+
+
+/**new css */
+.hero-image {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: var(--negro);
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+  overflow: hidden; /* Para evitar scroll si imagen sale */
+}
+
+.hero-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.responsive-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.content-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.hero-image h1 {
+  color: var(--negro);
+  font-size: 40px;
+  font-style: italic;
+  margin-top: 1rem;
+  margin-right: 180px;
+  margin-left: 30px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  max-width: 400px;
+  animation: bounceIn 1s ease-out;
+  -webkit-animation: bounceIn 1s ease-out;
+}
+
+@media (max-width: 768px) {
+  .hero-image h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-image h1 {
+    margin-left: 100px;
+    font-size: 5rem;
+  }
+}
+
+.copyright {
+  font-size: 1.5rem;
+  color: var(--negro);
+  position: absolute;
+  bottom: -250px;
+  right: 1rem;
+  padding: 0.5rem;
+}
+
+.copyright a {
+  color: var(--negro);
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: var(--verde);
 }
