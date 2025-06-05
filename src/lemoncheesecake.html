@@ -59,34 +59,60 @@
   </div>
          
     
-    <div class="fotoreceta"> 
-      <div class="estrellas">
-        <img src="img/golden.jpg" class="golden" alt="Imagen con forma de estrella">
-        <img src="img/golden.jpg" class="golden" alt="Imagen con forma de estrella">
-        <img src="img/golden.jpg" class="golden" alt="Imagen con forma de estrella">
-        <img src="img/golden.jpg" class="golden" alt="Imagen con forma de estrella">
-        <img src="img/golden.jpg" class="golden" alt="Imagen con forma de estrella">
+   <div class="fotoreceta">
+  <!-- Imagen principal de la receta -->
+  <picture>
+    <source srcset="img/cheesecakemini.webp" type="image/avif" media="(max-width: 767px)">
+    <source srcset="img/homemade-newyork-cheesecake-3120px.jpg?as=webp" type="image/webp" media="(min-width: 768px)">
+    <source srcset="img/homemade-newyork-cheesecake-3120px.jpg" type="image/jpeg" media="(min-width: 768px)">
+    <img src="img/homemade-newyork-cheesecake-3120px.jpg" 
+         alt="Homemade New York Cheesecake with Lemon and Mint" 
+         class="fotoreceta-image"
+         fetchpriority="high">
+</picture>
 
-      </div>
 
- 
-         <h1 lang="en">Lemon Cheesecake</h1> 
-     <!-- Corazón que cambiará de color al hacer clic -->
-     <i id="heart" class="heart far fa-heart unliked" onclick="toggleHeart()"></i>
-    </div>
-    <div class="container">
-      <div class="time">
-       <div class="time-item">
-        <i class="fa fa-utensils"></i>  <!-- Example icon -->
-        <span>8 porciones</span>
-       </div>
-      <div class="time-item">
-        <i class="fa fa-clock"></i>  <!-- Example icon -->
-        <span>1 hora</span>
-      </div>
-    </div>
+  <!-- Estrellas decorativas -->
+  <div class="estrellas">
+    <picture>
+      <source srcset="img/golden.jpg?as=avif" type="image/avif">
+      <source srcset="img/golden.jpg?as=webp" type="image/webp">
+      <img src="img/golden.jpg" class="golden" alt="Imagen con forma de estrella">
+    </picture>
+    <picture>
+      <source srcset="img/golden.jpg?as=avif" type="image/avif">
+      <source srcset="img/golden.jpg?as=webp" type="image/webp">
+      <img src="img/golden.jpg" class="golden" alt="Imagen con forma de estrella">
+    </picture>
+    <picture>
+      <source srcset="img/golden.jpg?as=avif" type="image/avif">
+      <source srcset="img/golden.jpg?as=webp" type="image/webp">
+      <img src="img/golden.jpg" class="golden" alt="Imagen con forma de estrella">
+    </picture>
+    <picture>
+      <source srcset="img/golden.jpg?as=avif" type="image/avif">
+      <source srcset="img/golden.jpg?as=webp" type="image/webp">
+      <img src="img/golden.jpg" class="golden" alt="Imagen con forma de estrella">
+    </picture>
+    <picture>
+      <source srcset="img/golden.jpg?as=avif" type="image/avif">
+      <source srcset="img/golden.jpg?as=webp" type="image/webp">
+      <img src="img/golden.jpg" class="golden" alt="Imagen con forma de estrella">
+    </picture>
+  </div>
 
-   
+  <!-- Título de la receta -->
+  <h1 lang="en">Lemon Cheesecake</h1>
+
+  <!-- Icono de corazón -->
+  <i id="heart" class="heart far fa-heart unliked" onclick="toggleHeart()"></i>
+</div>
+
+
+
+
+
+
 
     <div class="ingredients">
         <h2> <picture>

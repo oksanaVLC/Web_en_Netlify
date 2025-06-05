@@ -579,7 +579,7 @@ sharp("src\\img\\vecteezy_fresh-vegetables-cartoon_44766741.png")
   
 
 
-   const sharp = require('sharp');
+const sharp = require('sharp');
 
 sharp("src\\img\\close-up-crepes-with-cream-strawberries.jpg")
   .toFile("src\\img\\close-up-crepes-with-cream-strawberries.webp", (err, info) => {
@@ -591,7 +591,6 @@ sharp("src\\img\\close-up-crepes-with-cream-strawberries.jpg")
   });
 
 
-  */
 
 const sharp = require('sharp');
 
@@ -609,3 +608,18 @@ sharp(inputPath)
       console.log("Imagen procesada con éxito:", info);
     }
   });
+
+  */
+
+
+  const sharp = require('sharp');
+
+sharp("src\\img\\homemade-newyork-cheesecake-3120px.jpg")
+  .toFile("src\\img\\homemade-newyork-cheesecake-3120px.webp", (err, info) => {
+    if (err) {
+      console.error("Error al convertir la imagen:", err);
+    } else {
+      console.log("Imagen convertida con éxito:", info);
+    }
+  });
+  
